@@ -1,0 +1,5 @@
+# Dynamic-Allocation-of-Erasure-Coding-Policies
+
+Refer the project documentation and base paper.
+
+Erasure Code (EC) is being tipped to be the next best alternative to Replication for providing redundancy for Cloud Storage. Already major players like Microsoft and Facebook are having initial implementations using Erasure Code. Hadoop 0.20 was the first version that supported Erasure Code (aka HDFS-RAID), but EC was not included in later versions, only to resurface in Hadoop 3.0 (HDFS-EC). Hadoop 3.0.0 supports three default Erasure Code policies which are RS(3,2), RS(6,3) and RS(10,4). To have greater flexibility, in this work we opt for the implementation of new Erasure Code policies [RS(4,3), RS(5,3), RS(7,3), RS(7,4), RS(8,4), RS(9,4)] and the development of a Dynamic Erasure Coding Policy Allocation, based on minimum overhead produced, in order to maximize storage capacity. Three types of dynamic allocation have been proposed and implemented. A performance evaluation of the new policies was conducted in order to find the optional one for a NAS/SAN architecture and the effectiveness of the three implemented Dynamic Allocation of EC policy is provided.
